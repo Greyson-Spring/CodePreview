@@ -2,6 +2,7 @@ import java.sql.Connection;
 import java.sql.Statement;
 // test push webhook - 测试代码审查
 // 修改了push脚本代码，测试push webhook功能
+// 测试代码审查功能，修改了LoginController类，增加了一个formatUsers方法，并在login方法中添加了一个SQL注入漏洞。
 public class LoginController {
     
     public boolean login(Connection conn, String username, String password) {
