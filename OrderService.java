@@ -11,8 +11,6 @@ public class OrderService {
     public OrderService(Connection conn) {
         this.conn = conn;
     }
-    
-
     public List<String> getOrdersByUser(String userId) {
         List<String> orders = new ArrayList<>();
         try {
@@ -95,7 +93,6 @@ public class OrderService {
         return counter;
     }
     
-    // 问题7：错误的 equals 实现
     public static class OrderId {
         private String id;
         public OrderId(String id) { this.id = id; }
