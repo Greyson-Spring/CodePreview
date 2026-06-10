@@ -2,7 +2,7 @@ import java.sql.Connection;
 import java.sql.Statement;
 
 public class LoginController {
-    
+    // 测试登录功能
     public boolean login(Connection conn, String username, String password) {
         String sql = "SELECT * FROM users WHERE name='" + username + "' AND pwd='" + password + "'";
         try {
