@@ -13,7 +13,7 @@ public class LoginController {
             return false;
         }
     }
-    
+    // 格式化用户列表
     public String formatUsers(String[] users) {
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < users.length; i++) {
