@@ -16,10 +16,11 @@ public class LoginController {
             return false;
         }
     }
+    // 格式化用户列表
     public String formatUsers(String[] users) {
         String result = "";
         for (int i = 0; i < users.length; i++) {
-            result = result + users[i] + ",";  // 问题：循环内字符串拼接
+            result = result + users[i] + ",";  
         }
         return result;
     }

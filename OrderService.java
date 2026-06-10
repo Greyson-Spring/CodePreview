@@ -35,7 +35,7 @@ public class OrderService {
         for (int i = 0; i < orderIds.size(); i++) {
             try {
                 Statement stmt = conn.createStatement();
-                String sql = "SELECT amount FROM orders WHERE order_id = '" + orderIds.get(i) + "'";
+                String sql = "SELECT amount FROM orders WHERE order_id = " + orderIds.get(i) + "";
                 ResultSet rs = stmt.executeQuery(sql);
                 if (rs.next()) {
                     total = total + rs.getDouble("amount");
@@ -92,7 +92,6 @@ public class OrderService {
     public static int getCounter() {
         return counter;
     }
-    
     public static class OrderId {
         private String id;
         public OrderId(String id) { this.id = id; }
